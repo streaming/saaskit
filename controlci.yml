@@ -9,7 +9,7 @@
       - echo "hello world"
       - echo "How does this log"
       - echo "nopeep"
-      - echo "hi2"
+      - echo "hi23"
     environment:
       HELLO: world
       DOCKER_AUTH:
