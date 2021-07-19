@@ -1,0 +1,15 @@
+- name: environmentvariables
+  description: Outputs all environment variables passed to this build
+  type: docker
+  steps:
+  - name: echo-environment
+    image: alpine:3.7
+    commands:
+      - env
+      - echo "hello world"
+      - echo "How does this log"
+      - echo "nopeep"
+    environment:
+      HELLO: world
+      DOCKER_AUTH:
+        from_secret: firstone
